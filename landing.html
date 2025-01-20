@@ -755,40 +755,6 @@
             });
         </script>
         <script>
-            // Initialize EmailJS
-            (function () {
-                emailjs.init("YOUR_PUBLIC_KEY"); // Add your EmailJS public key here
-            })();
-
-            // Handle form submission
-            document
-                .getElementById("contactForm")
-                .addEventListener("submit", function (event) {
-                    event.preventDefault();
-
-                    // Get form data using named inputs
-                    const formData = {
-                        name: this.querySelector('input[name="name"]').value,
-                        email: this.querySelector('input[name="email"]').value,
-                        subject: this.querySelector('input[name="subject"]')
-                            .value,
-                        message: this.querySelector('textarea[name="message"]')
-                            .value,
-                    };
-
-                    // Send email using EmailJS
-                    emailjs
-                        .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
-                        .then(function () {
-                            alert("Message sent successfully!");
-                            document.getElementById("contactForm").reset();
-                        })
-                        .catch(function (error) {
-                            alert("Failed to send message. Please try again.");
-                        });
-                });
-        </script>
-        <script>
             // CAPTCHA generation and validation
             function generateCaptcha() {
                 const chars =
