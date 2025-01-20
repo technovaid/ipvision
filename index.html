@@ -162,14 +162,15 @@
     <!-- About Section -->
     <section id="about" class="bg-[#E04042] text-white py-20 relative">
         <div class="container mx-auto px-4 flex justify-between">
-            <div class="w-[45%] my-auto pb-[10%]">
+            <div class="w-full md:w-[45%] my-auto pb-[10%]">
                 <h2 class="text-5xl font-bold mb-6">About Us</h2>
                 <p class="text-xl">
                     We grant a license or permit for the use of the
                     characters to allow an activity to take place.
                 </p>
             </div>
-            <img src="assets/about-us.png" alt="Man Writing with Pen" class="w-[40%]" />
+            <!-- Hide this image on mobile -->
+            <img src="assets/about-us.png" alt="Man Writing with Pen" class="hidden md:block w-[40%]" />
         </div>
         <img src="assets/ipv-logo-red.png" alt="IPV Logo" class="w-[30%] absolute left-[10%] bottom-0" />
     </section>
@@ -249,21 +250,21 @@
                 Gallery
             </h2>
             <div class="relative" x-data="{ 
-            currentGroup: 0,
-            totalGroups: 4,
-            next() {
-                this.currentGroup = (this.currentGroup + 1) % this.totalGroups;
-            },
-            prev() {
-                this.currentGroup = (this.currentGroup - 1 + this.totalGroups) % this.totalGroups;
-            }
-        }">
+        currentGroup: 0,
+        totalGroups: 4,
+        next() {
+            this.currentGroup = (this.currentGroup + 1) % this.totalGroups;
+        },
+        prev() {
+            this.currentGroup = (this.currentGroup - 1 + this.totalGroups) % this.totalGroups;
+        }
+    }">
                 <!-- Gallery Container -->
                 <div class="overflow-hidden">
                     <div class="flex transition-transform duration-500 ease-in-out"
                         :style="'transform: translateX(-' + (currentGroup * 100) + '%)'">
                         <!-- All Gallerys in a row -->
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 min-w-full">
                             <div class="w-full">
                                 <img src="assets/gallery-1.png" alt="Gallery 1" class="w-full h-auto rounded-lg" />
                             </div>
@@ -274,7 +275,7 @@
                                 <img src="assets/gallery-3.png" alt="Gallery 3" class="w-full h-auto rounded-lg" />
                             </div>
                         </div>
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 min-w-full">
                             <div class="w-full">
                                 <img src="assets/gallery-4.png" alt="Gallery 4" class="w-full h-auto rounded-lg" />
                             </div>
@@ -285,7 +286,7 @@
                                 <img src="assets/gallery-6.png" alt="Gallery 6" class="w-full h-auto rounded-lg" />
                             </div>
                         </div>
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 min-w-full">
                             <div class="w-full">
                                 <img src="assets/gallery-7.png" alt="Gallery 7" class="w-full h-auto rounded-lg" />
                             </div>
@@ -296,7 +297,7 @@
                                 <img src="assets/gallery-9.png" alt="Gallery 9" class="w-full h-auto rounded-lg" />
                             </div>
                         </div>
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 min-w-full">
                             <div class="w-full">
                                 <img src="assets/gallery-10.png" alt="Gallery 10" class="w-full h-auto rounded-lg" />
                             </div>
@@ -312,14 +313,14 @@
 
                 <!-- Navigation Arrows -->
                 <button
-                    class="absolute -left-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg -ml-6 z-10"
+                    class="absolute left-2 sm:left-4 lg:-left-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg z-10"
                     @click="prev">
                     <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
                 <button
-                    class="absolute -right-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg -mr-6 z-10"
+                    class="absolute right-2 sm:right-4 lg:-right-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg z-10"
                     @click="next">
                     <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -329,13 +330,16 @@
         </div>
     </section>
 
+
     <!-- Partner Section -->
     <section id="partner" class="py-20">
         <div class="container mx-auto px-4">
             <h2 class="text-5xl font-bold text-center mb-12">
                 Our Partner
             </h2>
-            <img src="assets/our-partner.png" alt="Our Partners" class="w-full" />
+            <div class="flex justify-center">
+                <img src="assets/our-partner.png" alt="Our Partners" class="w-full sm:w-3/4 md:w-1/2 lg:w-auto" />
+            </div>
         </div>
     </section>
 
@@ -345,15 +349,16 @@
             <h2 class="text-5xl font-bold text-center mb-12">Contact Us</h2>
             <p class="text-center mb-12 max-w-3xl mx-auto">
                 With us, your brands can work in a number of ways and across
-                a variety of platform. Whether it's through product
-                placement, a special event sponsorship, a celebrity
-                endorsement, the possibility is endless. Our
-                well-strategized sponsor-ship can increase brand awareness
+                a variety of platforms. Whether it's through product
+                placement, a special event sponsorship, or a celebrity
+                endorsement, the possibilities are endless. Our
+                well-strategized sponsorships can increase brand awareness
                 and sales beyond the scope of traditional advertising.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <form id="contactForm">
+                        <!-- Form fields remain unchanged -->
                         <div class="flex gap-6 mb-6">
                             <div class="flex-1">
                                 <label class="block text-sm mb-2">Name*</label>
@@ -404,7 +409,7 @@
                 <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4789096911354!2d106.82350849999999!3d-6.200374900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41ecc890ed3%3A0x50a3e86ace0978d8!2sJl.%20Blora%20No.16%2C%20RT.2%2FRW.6%2C%20Dukuh%20Atas%2C%20Menteng%2C%20Kec.%20Menteng%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010310!5e0!3m2!1sid!2sid!4v1737377931490!5m2!1sid!2sid"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="w-full h-64 sm:h-80 md:h-96 rounded-lg border-0" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
