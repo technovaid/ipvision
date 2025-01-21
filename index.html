@@ -1,98 +1,239 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Add these SEO meta tags -->
+        <meta
+            name="description"
+            content="IPV (Intermedia Prima Vision) is a leading licensing and merchandising company specializing in character licensing, brand management, and IP development."
+        />
+        <meta
+            name="keywords"
+            content="IPV, Intermedia Prima Vision, licensing, merchandising, character licensing, IP management, brand licensing Indonesia"
+        />
+        <meta name="author" content="Intermedia Prima Vision" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IPV</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    height: {
-                        "screen-navbar": "calc(100vh - 76px)",
+        <!-- Open Graph tags for social media -->
+        <meta
+            property="og:title"
+            content="IPV - Intermedia Prima Vision | Character Licensing & Brand Management"
+        />
+        <meta
+            property="og:description"
+            content="IPV (Intermedia Prima Vision) is a leading licensing and merchandising company specializing in character licensing, brand management, and IP development."
+        />
+        <meta property="og:image" content="assets/ipv-logo-header.png" />
+        <meta property="og:url" content="https://ipvision.id" />
+
+        <!-- Twitter Card tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="IPV - Intermedia Prima Vision | Character Licensing & Brand Management"
+        />
+        <meta
+            name="twitter:description"
+            content="IPV (Intermedia Prima Vision) is a leading licensing and merchandising company specializing in character licensing, brand management, and IP development."
+        />
+        <meta name="twitter:image" content="assets/ipv-logo-header.png" />
+        <title>
+            IPV - Intermedia Prima Vision | Character Licensing & Brand
+            Management
+        </title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="assets/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="IPV" />
+        <link rel="manifest" href="assets/favicon/site.webmanifest" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        height: {
+                            "screen-navbar": "calc(100vh - 76px)",
+                        },
                     },
                 },
-            },
-        };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <style>
-        .logo-color-filter {
-            filter: brightness(0) saturate(100%) invert(72%) sepia(21%) saturate(649%) hue-rotate(314deg) brightness(92%) contrast(94%);
-        }
-    </style>
-</head>
+            };
+        </script>
+        <style>
+            .logo-color-filter {
+                filter: brightness(0) saturate(100%) invert(72%) sepia(21%)
+                    saturate(649%) hue-rotate(314deg) brightness(92%)
+                    contrast(94%);
+            }
+        </style>
+    </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="fixed flex justify-center w-full bg-white shadow-md z-50">
-        <div class="w-full mx-auto lg:px-12 px-4">
-            <div class="flex justify-between items-center h-[75px]">
-                <!-- Logo -->
-                <img src="assets/ipv-logo-header.png" alt="IPV Logo" class="w-[72px]" />
+    <body>
+        <!-- Navbar -->
+        <nav
+            class="fixed flex justify-center w-full bg-white shadow-md z-50"
+            aria-label="Main navigation"
+        >
+            <div class="w-full mx-auto lg:px-12 px-4">
+                <div class="flex justify-between items-center h-[75px]">
+                    <!-- Logo -->
+                    <img
+                        src="assets/ipv-logo-header.png"
+                        alt="IPV Logo"
+                        class="w-[72px]"
+                    />
 
-                <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center space-x-4">
-                    <a href="#highlight" class="text-gray-600 hover:text-gray-900 transition-colors">Highlight</a>
-                    <div class="text-gray-600">•</div>
-                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
-                    <div class="text-gray-600">•</div>
-                    <a href="#ip" class="text-gray-600 hover:text-gray-900 transition-colors">Our IP</a>
-                    <div class="text-gray-600">•</div>
-                    <a href="#gallery" class="text-gray-600 hover:text-gray-900 transition-colors">Gallery</a>
-                    <div class="text-gray-600">•</div>
-                    <a href="#partner" class="text-gray-600 hover:text-gray-900 transition-colors">Our Partner</a>
-                    <div class="text-gray-600">•</div>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors">Contact Us</a>
+                    <!-- Desktop Navigation -->
+                    <div class="hidden lg:flex items-center space-x-4">
+                        <a
+                            href="#highlight"
+                            class="text-gray-600 hover:text-gray-900 transition-colors"
+                            >Highlight</a
+                        >
+                        <div class="text-gray-600">•</div>
+                        <a
+                            href="#about"
+                            class="text-gray-600 hover:text-gray-900 transition-colors"
+                            >About</a
+                        >
+                        <div class="text-gray-600">•</div>
+                        <a
+                            href="#ip"
+                            class="text-gray-600 hover:text-gray-900 transition-colors"
+                            >Our IP</a
+                        >
+                        <div class="text-gray-600">•</div>
+                        <a
+                            href="#gallery"
+                            class="text-gray-600 hover:text-gray-900 transition-colors"
+                            >Gallery</a
+                        >
+                        <div class="text-gray-600">•</div>
+                        <a
+                            href="#partner"
+                            class="text-gray-600 hover:text-gray-900 transition-colors"
+                            >Our Partner</a
+                        >
+                        <div class="text-gray-600">•</div>
+                        <a
+                            href="#contact"
+                            class="text-gray-600 hover:text-gray-900 transition-colors"
+                            >Contact Us</a
+                        >
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button
+                        class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                        id="mobile-menu-button"
+                        aria-label="Toggle menu"
+                    >
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div
+            id="mobile-menu"
+            class="fixed top-0 left-0 w-full h-full bg-white z-40 lg:hidden hidden"
+        >
+            <div class="flex flex-col h-full">
+                <!-- Mobile Menu Header -->
+                <div class="flex justify-between items-center p-4 border-b">
+                    <img
+                        src="ipv-logo-header.png"
+                        alt="IPV Logo"
+                        class="w-[72px]"
+                    />
+                    <button
+                        class="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                        id="mobile-menu-close"
+                        aria-label="Close menu"
+                    >
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </button>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <button class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" id="mobile-menu-button"
-                    aria-label="Toggle menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+                <!-- Mobile Menu Links -->
+                <div class="flex flex-col p-4 space-y-4">
+                    <a
+                        href="#highlight"
+                        class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2"
+                        >Highlight</a
+                    >
+                    <a
+                        href="#about"
+                        class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2"
+                        >About</a
+                    >
+                    <a
+                        href="#ip"
+                        class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2"
+                        >Our IP</a
+                    >
+                    <a
+                        href="#gallery"
+                        class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2"
+                        >Gallery</a
+                    >
+                    <a
+                        href="#partner"
+                        class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2"
+                        >Our Partner</a
+                    >
+                    <a
+                        href="#contact"
+                        class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2"
+                        >Contact Us</a
+                    >
+                </div>
             </div>
         </div>
-    </nav>
 
-    <!-- Mobile Navigation -->
-    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white z-40 lg:hidden hidden">
-        <div class="flex flex-col h-full">
-            <!-- Mobile Menu Header -->
-            <div class="flex justify-between items-center p-4 border-b">
-                <img src="ipv-logo-header.png" alt="IPV Logo" class="w-[72px]" />
-                <button class="p-2 rounded-lg hover:bg-gray-100 transition-colors" id="mobile-menu-close"
-                    aria-label="Close menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Mobile Menu Links -->
-            <div class="flex flex-col p-4 space-y-4">
-                <a href="#highlight"
-                    class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2">Highlight</a>
-                <a href="#about" class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2">About</a>
-                <a href="#ip" class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2">Our IP</a>
-                <a href="#gallery" class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2">Gallery</a>
-                <a href="#partner" class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2">Our
-                    Partner</a>
-                <a href="#contact" class="text-xl text-gray-600 hover:text-gray-900 transition-colors py-2">Contact
-                    Us</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero Section with Slider -->
-    <section id="highlight" class="pt-[75px]">
-        <div class="relative" x-data="{ 
+        <!-- Hero Section with Slider -->
+        <section id="highlight" class="pt-[75px]">
+            <div
+                class="relative"
+                x-data="{ 
         activeSlide: 1,
         aspectRatio: 0,
         init() {
@@ -106,149 +247,268 @@
             };
             img.src = 'assets/hero-1.png'; // Load the first hero image
         }
-    }">
-            <!-- Container with dynamic aspect ratio -->
-            <div id="slider-container" class="relative w-full">
-                <!-- Slide 1 -->
-                <div class="absolute inset-0 transition-opacity duration-500"
-                    :class="{ 'opacity-100': activeSlide === 1, 'opacity-0': activeSlide !== 1 }">
-                    <img src="assets/hero-1.png" alt="Hero 1" class="absolute inset-0 w-full h-full object-cover" />
-                </div>
+    }"
+            >
+                <!-- Container with dynamic aspect ratio -->
+                <div id="slider-container" class="relative w-full">
+                    <!-- Slide 1 -->
+                    <div
+                        class="absolute inset-0 transition-opacity duration-500"
+                        :class="{ 'opacity-100': activeSlide === 1, 'opacity-0': activeSlide !== 1 }"
+                    >
+                        <img
+                            src="assets/hero-1.png"
+                            alt="Hero 1"
+                            class="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
-                <!-- Slide 2 -->
-                <div class="absolute inset-0 transition-opacity duration-500"
-                    :class="{ 'opacity-100': activeSlide === 2, 'opacity-0': activeSlide !== 2 }">
-                    <img src="assets/hero-2.png" alt="Hero 2" class="absolute inset-0 w-full h-full object-cover" />
-                </div>
+                    <!-- Slide 2 -->
+                    <div
+                        class="absolute inset-0 transition-opacity duration-500"
+                        :class="{ 'opacity-100': activeSlide === 2, 'opacity-0': activeSlide !== 2 }"
+                    >
+                        <img
+                            src="assets/hero-2.png"
+                            alt="Hero 2"
+                            class="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
-                <!-- Slide 3 -->
-                <div class="absolute inset-0 transition-opacity duration-500"
-                    :class="{ 'opacity-100': activeSlide === 3, 'opacity-0': activeSlide !== 3 }">
-                    <img src="assets/hero-3.png" alt="Hero 3" class="absolute inset-0 w-full h-full object-cover" />
-                </div>
+                    <!-- Slide 3 -->
+                    <div
+                        class="absolute inset-0 transition-opacity duration-500"
+                        :class="{ 'opacity-100': activeSlide === 3, 'opacity-0': activeSlide !== 3 }"
+                    >
+                        <img
+                            src="assets/hero-3.png"
+                            alt="Hero 3"
+                            class="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
 
-                <!-- Slider controls -->
-                <button
-                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 p-2 rounded-full hover:bg-opacity-30"
-                    @click="activeSlide = activeSlide === 1 ? 3 : activeSlide - 1">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <button
-                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 p-2 rounded-full hover:bg-opacity-30"
-                    @click="activeSlide = activeSlide === 3 ? 1 : activeSlide + 1">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
+                    <!-- Slider controls -->
+                    <button
+                        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 p-2 rounded-full hover:bg-opacity-30"
+                        @click="activeSlide = activeSlide === 1 ? 3 : activeSlide - 1"
+                    >
+                        <svg
+                            class="w-6 h-6 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 19l-7-7 7-7"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 p-2 rounded-full hover:bg-opacity-30"
+                        @click="activeSlide = activeSlide === 3 ? 1 : activeSlide + 1"
+                    >
+                        <svg
+                            class="w-6 h-6 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                            />
+                        </svg>
+                    </button>
 
-                <!-- Slider indicators -->
-                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
-                    <button class="w-3 h-3 rounded-full transition-colors duration-300"
-                        :class="{ 'bg-white': activeSlide === 1, 'bg-white/50': activeSlide !== 1 }"
-                        @click="activeSlide = 1"></button>
-                    <button class="w-3 h-3 rounded-full transition-colors duration-300"
-                        :class="{ 'bg-white': activeSlide === 2, 'bg-white/50': activeSlide !== 2 }"
-                        @click="activeSlide = 2"></button>
-                    <button class="w-3 h-3 rounded-full transition-colors duration-300"
-                        :class="{ 'bg-white': activeSlide === 3, 'bg-white/50': activeSlide !== 3 }"
-                        @click="activeSlide = 3"></button>
+                    <!-- Slider indicators -->
+                    <div
+                        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4"
+                    >
+                        <button
+                            class="w-3 h-3 rounded-full transition-colors duration-300"
+                            :class="{ 'bg-white': activeSlide === 1, 'bg-white/50': activeSlide !== 1 }"
+                            @click="activeSlide = 1"
+                        ></button>
+                        <button
+                            class="w-3 h-3 rounded-full transition-colors duration-300"
+                            :class="{ 'bg-white': activeSlide === 2, 'bg-white/50': activeSlide !== 2 }"
+                            @click="activeSlide = 2"
+                        ></button>
+                        <button
+                            class="w-3 h-3 rounded-full transition-colors duration-300"
+                            :class="{ 'bg-white': activeSlide === 3, 'bg-white/50': activeSlide !== 3 }"
+                            @click="activeSlide = 3"
+                        ></button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="bg-[#E04042] text-white py-20 relative">
-        <div class="container mx-auto px-4 flex justify-between">
-            <div class="w-[45%] my-auto pb-[10%]">
-                <h2 class="text-5xl font-bold mb-6">About Us</h2>
-                <p class="text-xl">
-                    We grant a license or permit for the use of the
-                    characters to allow an activity to take place.
-                </p>
+        <!-- About Section -->
+        <section id="about" class="bg-[#E04042] text-white py-20 relative">
+            <div class="container mx-auto px-4 flex justify-between">
+                <div class="w-[45%] my-auto pb-[10%]">
+                    <h1 class="text-5xl font-bold mb-6">About Us</h1>
+                    <p class="text-xl">
+                        We grant a license or permit for the use of the
+                        characters to allow an activity to take place.
+                    </p>
+                </div>
+                <img
+                    src="assets/about-us.png"
+                    alt="Man Writing with Pen"
+                    class="w-[40%]"
+                />
             </div>
-            <img src="assets/about-us.png" alt="Man Writing with Pen" class="w-[40%]" />
-        </div>
-        <img src="assets/ipv-logo-red.png" alt="IPV Logo" class="w-[30%] absolute left-[10%] bottom-0" />
-    </section>
+            <img
+                src="assets/ipv-logo-red.png"
+                alt="IPV Logo"
+                class="w-[30%] absolute left-[10%] bottom-0"
+            />
+        </section>
 
-    <!-- IP Section -->
-    <section id="ip" class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-12">
-                ✨ Our IP ✨
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- IP Section -->
+        <section id="ip" class="py-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl font-bold text-center mb-12">
+                    ✨ Our IP ✨
+                </h1>
                 <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/bread-barbershop.png" alt="Bread Barbershop" class="w-full h-auto rounded" />
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                >
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/bread-barbershop.png"
+                            alt="Bread Barbershop"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/go-go-dino-explorer.png"
+                            alt="Go Go Dino Explorer"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/masha-and-the-bear.png"
+                            alt="Masha and The Bear"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/bobo.png"
+                            alt="Bobo"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/baba-lili-tata.png"
+                            alt="Baba Lili Tata"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/ark-duck-family.png"
+                            alt="Ark Duck Family"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/tayo.png"
+                            alt="Tayo"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/pororo.png"
+                            alt="Pororo"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/pinkfong.png"
+                            alt="Pinkfong"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/jl.png"
+                            alt="Juicy Luicy"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/arkiv.png"
+                            alt="Arkiv"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <div
+                        class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2"
+                    >
+                        <img
+                            src="assets/ip/cake.png"
+                            alt="Cake"
+                            class="w-full h-auto rounded"
+                        />
+                    </div>
+                    <!-- Add more IP cards as needed -->
                 </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/go-go-dino-explorer.png" alt="Go Go Dino Explorer"
-                        class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/masha-and-the-bear.png" alt="Masha and The Bear"
-                        class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/bobo.png" alt="Bobo" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/baba-lili-tata.png" alt="Baba Lili Tata" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/ark-duck-family.png" alt="Ark Duck Family" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/tayo.png" alt="Tayo" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/pororo.png" alt="Pororo" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/pinkfong.png" alt="Pinkfong" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/jl.png" alt="Juicy Luicy" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/arkiv.png" alt="Arkiv" class="w-full h-auto rounded" />
-                </div>
-                <div
-                    class="bg-white border-2 border-gray-300 rounded-lg p-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-                    <img src="assets/ip/cake.png" alt="Cake" class="w-full h-auto rounded" />
-                </div>
-                <!-- Add more IP cards as needed -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="relative py-20">
-        <!-- Split background -->
-        <div class="absolute inset-0">
-            <div class="h-1/2 bg-[#132436]"></div>
-            <div class="h-1/2 bg-white"></div>
-        </div>
+        <!-- Gallery Section -->
+        <section id="gallery" class="relative py-20">
+            <!-- Split background -->
+            <div class="absolute inset-0">
+                <div class="h-1/2 bg-[#132436]"></div>
+                <div class="h-1/2 bg-white"></div>
+            </div>
 
-        <div class="container mx-auto px-4 relative">
-            <h2 class="text-5xl font-bold text-center mb-12 text-white">
-                Gallery
-            </h2>
-            <div class="relative" x-data="{ 
+            <div class="container mx-auto px-4 relative">
+                <h1 class="text-5xl font-bold text-center mb-12 text-white">
+                    Gallery
+                </h1>
+                <div
+                    class="relative"
+                    x-data="{ 
             currentGroup: 0,
             totalGroups: 4,
             next() {
@@ -257,333 +517,516 @@
             prev() {
                 this.currentGroup = (this.currentGroup - 1 + this.totalGroups) % this.totalGroups;
             }
-        }">
-                <!-- Gallery Container -->
-                <div class="overflow-hidden">
-                    <div class="flex transition-transform duration-500 ease-in-out"
-                        :style="'transform: translateX(-' + (currentGroup * 100) + '%)'">
-                        <!-- All Gallerys in a row -->
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
-                            <div class="w-full">
-                                <img src="assets/gallery-1.png" alt="Gallery 1" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-2.png" alt="Gallery 2" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-3.png" alt="Gallery 3" class="w-full h-auto rounded-lg" />
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
-                            <div class="w-full">
-                                <img src="assets/gallery-4.png" alt="Gallery 4" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-5.png" alt="Gallery 5" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-6.png" alt="Gallery 6" class="w-full h-auto rounded-lg" />
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
-                            <div class="w-full">
-                                <img src="assets/gallery-7.png" alt="Gallery 7" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-8.png" alt="Gallery 8" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-9.png" alt="Gallery 9" class="w-full h-auto rounded-lg" />
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-8 min-w-full">
-                            <div class="w-full">
-                                <img src="assets/gallery-10.png" alt="Gallery 10" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-11.png" alt="Gallery 11" class="w-full h-auto rounded-lg" />
-                            </div>
-                            <div class="w-full">
-                                <img src="assets/gallery-12.png" alt="Gallery 12" class="w-full h-auto rounded-lg" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Arrows -->
-                <button
-                    class="absolute -left-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg -ml-6 z-10"
-                    @click="prev">
-                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <button
-                    class="absolute -right-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg -mr-6 z-10"
-                    @click="next">
-                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partner Section -->
-    <section id="partner" class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-12">
-                Our Partner
-            </h2>
-            <img src="assets/our-partner.png" alt="Our Partners" class="w-full" />
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-12">Contact Us</h2>
-            <p class="text-center mb-12 max-w-3xl mx-auto">
-                With us, your brands can work in a number of ways and across
-                a variety of platform. Whether it's through product
-                placement, a special event sponsorship, a celebrity
-                endorsement, the possibility is endless. Our
-                well-strategized sponsor-ship can increase brand awareness
-                and sales beyond the scope of traditional advertising.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <form id="contactForm">
-                        <div class="flex gap-6 mb-6">
-                            <div class="flex-1">
-                                <label class="block text-sm mb-2">Name*</label>
-                                <input type="text" name="name" required
-                                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            </div>
-                            <div class="flex-1">
-                                <label class="block text-sm mb-2">Email*</label>
-                                <input type="email" name="email" required
-                                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            </div>
-                        </div>
-                        <div class="mb-6">
-                            <label class="block text-sm mb-2">Subject*</label>
-                            <input type="text" name="subject" required
-                                class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                        </div>
-                        <div class="mb-6">
-                            <label class="block text-sm mb-2">Message*</label>
-                            <textarea name="message" rows="5" required
-                                class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <div class="mb-6">
-                            <label class="block text-sm mb-2">CAPTCHA*</label>
-                            <div class="flex items-center gap-4">
-                                <div id="captchaDisplay"
-                                    class="bg-gray-100 px-4 py-2 rounded select-none font-mono text-lg tracking-wider">
+        }"
+                >
+                    <!-- Gallery Container -->
+                    <div class="overflow-hidden">
+                        <div
+                            class="flex transition-transform duration-500 ease-in-out"
+                            :style="'transform: translateX(-' + (currentGroup * 100) + '%)'"
+                        >
+                            <!-- All Gallerys in a row -->
+                            <div class="grid grid-cols-3 gap-8 min-w-full">
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-1.png"
+                                        alt="Gallery 1"
+                                        class="w-full h-auto rounded-lg"
+                                    />
                                 </div>
-                                <button type="button" onclick="updateCaptcha()"
-                                    class="text-blue-500 hover:text-blue-600">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v4a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </button>
-                                <input name="captcha" type="text" required placeholder="Enter CAPTCHA"
-                                    class="flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-2.png"
+                                        alt="Gallery 2"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-3.png"
+                                        alt="Gallery 3"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-8 min-w-full">
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-4.png"
+                                        alt="Gallery 4"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-5.png"
+                                        alt="Gallery 5"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-6.png"
+                                        alt="Gallery 6"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-8 min-w-full">
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-7.png"
+                                        alt="Gallery 7"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-8.png"
+                                        alt="Gallery 8"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-9.png"
+                                        alt="Gallery 9"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-8 min-w-full">
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-10.png"
+                                        alt="Gallery 10"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-11.png"
+                                        alt="Gallery 11"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
+                                <div class="w-full">
+                                    <img
+                                        src="assets/gallery-12.png"
+                                        alt="Gallery 12"
+                                        class="w-full h-auto rounded-lg"
+                                    />
+                                </div>
                             </div>
                         </div>
-                        <button type="submit"
-                            class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300">
-                            Submit
-                        </button>
-                    </form>
-                </div>
-                <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4789096911354!2d106.82350849999999!3d-6.200374900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41ecc890ed3%3A0x50a3e86ace0978d8!2sJl.%20Blora%20No.16%2C%20RT.2%2FRW.6%2C%20Dukuh%20Atas%2C%20Menteng%2C%20Kec.%20Menteng%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010310!5e0!3m2!1sid!2sid!4v1737377931490!5m2!1sid!2sid"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button
+                        class="absolute -left-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg -ml-6 z-10"
+                        @click="prev"
+                        aria-label="Previous gallery items"
+                    >
+                        <svg
+                            class="w-6 h-6 text-gray-800"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 19l-7-7 7-7"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        class="absolute -right-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-4 shadow-lg -mr-6 z-10"
+                        @click="next"
+                        aria-label="Next gallery items"
+                    >
+                        <svg
+                            class="w-6 h-6 text-gray-800"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                            />
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#132436] text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <img src="assets/ipv-logo-white.png" alt="IPV Logo" class="w-32" />
-                </div>
-                <div>
-                    <h5 class="text-xl font-bold mb-4">Legal</h5>
-                    <ul class="space-y-2">
-                        <li>
-                            <a href="#" class="hover:text-gray-300">Legal Line</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-gray-300">Terms of Use</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-xl font-bold mb-4">Office</h5>
-                    <p>PT. Intermedia Prima Vision</p>
-                    <p>Jl. Blora 16, menteng,</p>
-                    <p>Jakarta Pusat - 10310</p>
-                    <p>Indonesia</p>
-                </div>
-                <div>
-                    <h5 class="text-xl font-bold mb-4">Follow Us</h5>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:opacity-80">
-                            <img src="assets/instagram-logo.png" alt="Instagram" class="w-10 h-10" />
-                        </a>
-                        <a href="#" class="hover:opacity-80">
-                            <img src="assets/youtube-logo.png" alt="YouTube" class="w-10 h-10" />
-                        </a>
-                        <a href="#" class="hover:opacity-80">
-                            <img src="assets/tiktok-logo.png" alt="TikTok" class="w-10 h-10" />
-                        </a>
+        <!-- Partner Section -->
+        <section id="partner" class="py-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl font-bold text-center mb-12">
+                    Our Partner
+                </h1>
+                <img
+                    src="assets/our-partner.png"
+                    alt="Our Partners"
+                    class="w-full"
+                />
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl font-bold text-center mb-12">Contact Us</h1>
+                <p class="text-center mb-12 max-w-3xl mx-auto">
+                    With us, your brands can work in a number of ways and across
+                    a variety of platform. Whether it's through product
+                    placement, a special event sponsorship, a celebrity
+                    endorsement, the possibility is endless. Our
+                    well-strategized sponsor-ship can increase brand awareness
+                    and sales beyond the scope of traditional advertising.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <form id="contactForm">
+                            <div class="flex gap-6 mb-6">
+                                <div class="flex-1">
+                                    <label for="name" class="block text-sm mb-2"
+                                        >Name*</label
+                                    >
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        required
+                                        class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
+                                </div>
+                                <div class="flex-1">
+                                    <label
+                                        for="email"
+                                        class="block text-sm mb-2"
+                                        >Email*</label
+                                    >
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        required
+                                        class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm mb-2"
+                                    >Subject*</label
+                                >
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    required
+                                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                />
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm mb-2"
+                                    >Message*</label
+                                >
+                                <textarea
+                                    name="message"
+                                    rows="5"
+                                    required
+                                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                ></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label for="captcha" class="block text-sm mb-2"
+                                    >CAPTCHA*</label
+                                >
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        id="captchaDisplay"
+                                        class="bg-gray-100 px-4 py-2 rounded select-none font-mono text-lg tracking-wider"
+                                    ></div>
+                                    <button
+                                        type="button"
+                                        onclick="updateCaptcha()"
+                                        class="text-blue-500 hover:text-blue-600"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v4a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                                                clip-rule="evenodd"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <input
+                                        name="captcha"
+                                        type="text"
+                                        required
+                                        placeholder="Enter CAPTCHA"
+                                        class="flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="submit"
+                                class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                            >
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <iframe
+                            title="IPV Office Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4789096911354!2d106.82350849999999!3d-6.200374900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41ecc890ed3%3A0x50a3e86ace0978d8!2sJl.%20Blora%20No.16%2C%20RT.2%2FRW.6%2C%20Dukuh%20Atas%2C%20Menteng%2C%20Kec.%20Menteng%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010310!5e0!3m2!1sid!2sid!4v1737377931490!5m2!1sid!2sid"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-8 pt-8 border-t border-gray-700">
-                <p>
-                    Copyright ©
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    - Intermedia Prima Vision All Rights Reserved
-                </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#132436] text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <img
+                            src="assets/ipv-logo-white.png"
+                            alt="IPV Logo"
+                            class="w-32"
+                        />
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-bold mb-4">Legal</h5>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="hover:text-gray-300"
+                                    >Legal Line</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300"
+                                    >Terms of Use</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-bold mb-4">Office</h5>
+                        <p>PT. Intermedia Prima Vision</p>
+                        <p>Jl. Blora 16, menteng,</p>
+                        <p>Jakarta Pusat - 10310</p>
+                        <p>Indonesia</p>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-bold mb-4">Follow Us</h5>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:opacity-80">
+                                <img
+                                    src="assets/instagram-logo.png"
+                                    alt="Instagram"
+                                    class="w-10 h-10"
+                                />
+                            </a>
+                            <a href="#" class="hover:opacity-80">
+                                <img
+                                    src="assets/youtube-logo.png"
+                                    alt="YouTube"
+                                    class="w-10 h-10"
+                                />
+                            </a>
+                            <a href="#" class="hover:opacity-80">
+                                <img
+                                    src="assets/tiktok-logo.png"
+                                    alt="TikTok"
+                                    class="w-10 h-10"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8 pt-8 border-t border-gray-700">
+                    <p>
+                        Copyright ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        - Intermedia Prima Vision All Rights Reserved
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- AlpineJS for slider functionality -->
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <!-- AlpineJS for slider functionality -->
+        <script
+            src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+            defer
+        ></script>
 
-    <!-- Mobile menu toggle -->
-    <script>
-        const mobileMenu = document.getElementById("mobile-menu");
-        const mobileMenuButton =
-            document.getElementById("mobile-menu-button");
-        const mobileMenuClose =
-            document.getElementById("mobile-menu-close");
-        const mobileMenuLinks = document.querySelectorAll("#mobile-menu a");
+        <!-- Mobile menu toggle -->
+        <script>
+            const mobileMenu = document.getElementById("mobile-menu");
+            const mobileMenuButton =
+                document.getElementById("mobile-menu-button");
+            const mobileMenuClose =
+                document.getElementById("mobile-menu-close");
+            const mobileMenuLinks = document.querySelectorAll("#mobile-menu a");
 
-        function toggleMobileMenu() {
-            mobileMenu.classList.toggle("hidden");
-            if (!mobileMenu.classList.contains("hidden")) {
-                document.body.style.overflow = "hidden";
-            } else {
+            function toggleMobileMenu() {
+                mobileMenu.classList.toggle("hidden");
+                if (!mobileMenu.classList.contains("hidden")) {
+                    document.body.style.overflow = "hidden";
+                } else {
+                    document.body.style.overflow = "";
+                }
+            }
+
+            function closeMobileMenu() {
+                mobileMenu.classList.add("hidden");
                 document.body.style.overflow = "";
             }
-        }
 
-        function closeMobileMenu() {
-            mobileMenu.classList.add("hidden");
-            document.body.style.overflow = "";
-        }
+            // Add event listeners
+            mobileMenuButton.addEventListener("click", toggleMobileMenu);
+            mobileMenuClose.addEventListener("click", closeMobileMenu);
 
-        // Add event listeners
-        mobileMenuButton.addEventListener("click", toggleMobileMenu);
-        mobileMenuClose.addEventListener("click", closeMobileMenu);
-
-        // Close mobile menu when clicking a link
-        mobileMenuLinks.forEach((link) => {
-            link.addEventListener("click", closeMobileMenu);
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener("click", (e) => {
-            if (
-                !mobileMenu.contains(e.target) &&
-                !mobileMenuButton.contains(e.target) &&
-                !mobileMenu.classList.contains("hidden")
-            ) {
-                closeMobileMenu();
-            }
-        });
-    </script>
-    <script>
-        // CAPTCHA generation and validation
-        function generateCaptcha() {
-            const chars =
-                "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-            let captcha = "";
-            for (let i = 0; i < 6; i++) {
-                captcha += chars.charAt(
-                    Math.floor(Math.random() * chars.length),
-                );
-            }
-            return captcha;
-        }
-
-        // Store the current CAPTCHA text
-        let currentCaptcha = "";
-
-        // Function to update CAPTCHA display
-        function updateCaptcha() {
-            currentCaptcha = generateCaptcha();
-            const captchaDisplay =
-                document.getElementById("captchaDisplay");
-            captchaDisplay.textContent = currentCaptcha;
-        }
-
-        // Initialize CAPTCHA on page load
-        document.addEventListener("DOMContentLoaded", () => {
-            updateCaptcha();
-        });
-
-        // Update the form submission handler
-        document
-            .getElementById("contactForm")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                // Get the user's CAPTCHA input
-                const userCaptcha = this.querySelector(
-                    'input[name="captcha"]',
-                ).value;
-
-                // Validate CAPTCHA
-                if (userCaptcha !== currentCaptcha) {
-                    alert("Incorrect CAPTCHA. Please try again.");
-                    updateCaptcha();
-                    this.querySelector('input[name="captcha"]').value = "";
-                    return;
-                }
-
-                // Get form data using named inputs
-                const formData = {
-                    name: this.querySelector('input[name="name"]').value,
-                    email: this.querySelector('input[name="email"]').value,
-                    subject: this.querySelector('input[name="subject"]')
-                        .value,
-                    message: this.querySelector('textarea[name="message"]')
-                        .value,
-                };
-
-                // Send email using EmailJS
-                emailjs
-                    .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
-                    .then(function () {
-                        alert("Message sent successfully!");
-                        document.getElementById("contactForm").reset();
-                        updateCaptcha(); // Generate new CAPTCHA after successful submission
-                    })
-                    .catch(function (error) {
-                        alert("Failed to send message. Please try again.");
-                    });
+            // Close mobile menu when clicking a link
+            mobileMenuLinks.forEach((link) => {
+                link.addEventListener("click", closeMobileMenu);
             });
-    </script>
-</body>
 
+            // Close mobile menu when clicking outside
+            document.addEventListener("click", (e) => {
+                if (
+                    !mobileMenu.contains(e.target) &&
+                    !mobileMenuButton.contains(e.target) &&
+                    !mobileMenu.classList.contains("hidden")
+                ) {
+                    closeMobileMenu();
+                }
+            });
+        </script>
+        <script>
+            // CAPTCHA generation and validation
+            function generateCaptcha() {
+                const chars =
+                    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+                let captcha = "";
+                for (let i = 0; i < 6; i++) {
+                    captcha += chars.charAt(
+                        Math.floor(Math.random() * chars.length),
+                    );
+                }
+                return captcha;
+            }
+
+            // Store the current CAPTCHA text
+            let currentCaptcha = "";
+
+            // Function to update CAPTCHA display
+            function updateCaptcha() {
+                currentCaptcha = generateCaptcha();
+                const captchaDisplay =
+                    document.getElementById("captchaDisplay");
+                captchaDisplay.textContent = currentCaptcha;
+            }
+
+            // Initialize CAPTCHA on page load
+            document.addEventListener("DOMContentLoaded", () => {
+                updateCaptcha();
+            });
+
+            document
+                .getElementById("contactForm")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    // Get the user's CAPTCHA input
+                    const userCaptcha = this.querySelector(
+                        'input[name="captcha"]',
+                    ).value;
+
+                    // Validate CAPTCHA
+                    if (userCaptcha !== currentCaptcha) {
+                        alert("Incorrect CAPTCHA. Please try again.");
+                        updateCaptcha();
+                        this.querySelector('input[name="captcha"]').value = "";
+                        return;
+                    }
+
+                    // Get form data
+                    const name = this.querySelector('input[name="name"]').value;
+                    const email = this.querySelector(
+                        'input[name="email"]',
+                    ).value;
+                    const subject = this.querySelector(
+                        'input[name="subject"]',
+                    ).value;
+                    const message = this.querySelector(
+                        'textarea[name="message"]',
+                    ).value;
+
+                    // Create WhatsApp message
+                    const whatsappMessage =
+                        `Name: ${name}%0A` +
+                        `Email: ${email}%0A` +
+                        `Subject: ${subject}%0A` +
+                        `Message: ${message}`;
+
+                    // Create WhatsApp URL
+                    const whatsappUrl = `https://wa.me/6282112096430?text=${whatsappMessage}`;
+
+                    // Open WhatsApp in a new tab
+                    window.open(whatsappUrl, "_blank");
+
+                    // Reset form and CAPTCHA after successful submission
+                    this.reset();
+                    updateCaptcha();
+                });
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Intermedia Prima Vision",
+                "alternateName": "IPV",
+                "url": "https://ipvision.id",
+                "logo": "https://ipvision.id/assets/ipv-logo-header.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+62-821-1209-6430",
+                    "contactType": "customer service",
+                    "areaServed": "ID"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Jl. Blora 16",
+                    "addressLocality": "Jakarta Pusat",
+                    "postalCode": "10310",
+                    "addressCountry": "ID"
+                }
+            }
+        </script>
+    </body>
 </html>
