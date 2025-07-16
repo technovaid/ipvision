@@ -78,6 +78,172 @@
                     saturate(649%) hue-rotate(314deg) brightness(92%)
                     contrast(94%);
             }
+
+            /* WhatsApp Chat Widget Custom Styles */
+            .whatsapp-chat-widget {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            }
+
+            .chat-bubble-sent {
+                background: linear-gradient(135deg, #25d366 0%, #20c05c 100%);
+                border-radius: 20px 20px 5px 20px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            }
+
+            .chat-bubble-received {
+                background: #ffffff;
+                border-radius: 20px 20px 20px 5px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            }
+
+            .typing-dots {
+                animation: typing 1.4s infinite;
+            }
+
+            @keyframes typing {
+                0%,
+                60%,
+                100% {
+                    opacity: 0.3;
+                }
+                30% {
+                    opacity: 1;
+                }
+            }
+
+            .message-slide-in {
+                animation: slideInUp 0.3s ease-out;
+            }
+
+            @keyframes slideInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .pulse-notification {
+                animation: pulse 2s infinite;
+            }
+
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                50% {
+                    transform: scale(1.05);
+                    opacity: 0.8;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+            /* Mobile optimizations */
+            @media (max-width: 640px) {
+                .whatsapp-chat-widget {
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    top: 0;
+                    pointer-events: none;
+                    z-index: 1000;
+                }
+
+                .whatsapp-chat-widget > * {
+                    pointer-events: all;
+                }
+
+                .whatsapp-chat-widget .chat-popup {
+                    position: fixed;
+                    bottom: 5rem;
+                    right: 1rem;
+                    left: 1rem;
+                    width: auto;
+                    max-width: none;
+                    margin: 0;
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+                    border-radius: 1rem;
+                }
+
+                .whatsapp-chat-widget .floating-button {
+                    position: fixed;
+                    bottom: 1rem;
+                    right: 1rem;
+                    left: auto;
+                    width: 56px;
+                    height: 56px;
+                }
+
+                .whatsapp-chat-widget .chat-popup .chat-body {
+                    height: 50vh;
+                    max-height: 280px;
+                    min-height: 200px;
+                }
+            }
+
+            /* Extra small screens */
+            @media (max-width: 480px) {
+                .whatsapp-chat-widget .chat-popup {
+                    bottom: 4.5rem;
+                    right: 0.75rem;
+                    left: 0.75rem;
+                    border-radius: 0.75rem;
+                }
+
+                .whatsapp-chat-widget .floating-button {
+                    bottom: 0.75rem;
+                    right: 0.75rem;
+                    width: 52px;
+                    height: 52px;
+                }
+
+                .whatsapp-chat-widget .chat-popup .chat-body {
+                    height: 45vh;
+                    max-height: 250px;
+                    min-height: 180px;
+                }
+            }
+
+            /* Landscape mobile */
+            @media (max-width: 640px) and (orientation: landscape) {
+                .whatsapp-chat-widget .chat-popup {
+                    bottom: 4rem;
+                }
+
+                .whatsapp-chat-widget .chat-popup .chat-body {
+                    height: 35vh;
+                    max-height: 200px;
+                    min-height: 150px;
+                }
+            }
+
+            /* Smooth scrollbar */
+            .chat-body::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            .chat-body::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+            }
+
+            .chat-body::-webkit-scrollbar-thumb {
+                background: #c1c1c1;
+                border-radius: 10px;
+            }
+
+            .chat-body::-webkit-scrollbar-thumb:hover {
+                background: #a8a8a8;
+            }
         </style>
     </head>
 
@@ -350,7 +516,10 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="bg-[#E04042] text-white px-6 lg:px-16 relative">
+        <section
+            id="about"
+            class="bg-[#E04042] text-white px-6 lg:px-16 relative"
+        >
             <div
                 class="mx-auto flex justify-between bg-[url('assets/ipv-logo-red.png')] bg-no-repeat py-16"
                 style="
@@ -360,9 +529,17 @@
             >
                 <div class="w-full md:w-[45%] my-auto pb-[10%]">
                     <h2 class="text-5xl font-bold mb-6">About Us</h2>
-                    <p class="text-xl">
-                        We grant a license or permit for the use of the
-                        characters to allow an activity to take place.
+                    <br class="text-xl">
+                        We are leading licensing company, that proudly represent
+                        a diverse portfolio of iconic characters, offering both
+                        product licensing and live show rights to trusted
+                        partners across industries. 
+                </br>
+                </br>
+                        Our mission is to connect
+                        brands with the magic of storytelling and the power of
+                        imagination also to turn our IPs into unforgettable
+                        experiences - and commercial success.
                     </p>
                 </div>
                 <!-- Hide this image on mobile -->
@@ -675,9 +852,7 @@
         <!-- Partner Section -->
         <section id="partner" class="pt-8">
             <div class="mx-auto px-6 lg:px-16">
-                <h2 class="text-5xl font-bold text-center mb-1">
-                    Our Partner
-                </h2>
+                <h2 class="text-5xl font-bold text-center mb-1">Our Partner</h2>
                 <div class="flex justify-center">
                     <img
                         src="assets/our-partner.png"
@@ -889,6 +1064,258 @@
                 </div>
             </div>
         </footer>
+
+        <!-- WhatsApp Chat Widget -->
+        <div
+            class="fixed bottom-6 right-6 z-50 whatsapp-chat-widget"
+            x-data="{ 
+                isButtonVisible: false,
+                isChatOpen: false,
+                message: '',
+                isTyping: false,
+                messages: [
+                    { type: 'received', text: 'Hello! 👋 Welcome to IPV (Intermedia Prima Vision)', time: '10:30' },
+                    { type: 'received', text: 'How can we help you today?', time: '10:30' }
+                ],
+                init() {
+                    setTimeout(() => this.isButtonVisible = true, 1000);
+                    
+                    // Handle viewport changes on mobile devices
+                    window.addEventListener('resize', () => {
+                        if (this.isChatOpen) {
+                            this.$nextTick(() => {
+                                this.scrollToBottom();
+                            });
+                        }
+                    });
+                },
+                openChat() {
+                    this.isChatOpen = true;
+                    this.$nextTick(() => {
+                        this.scrollToBottom();
+                        // Auto-focus input on mobile
+                        if (window.innerWidth <= 640) {
+                            const input = this.$refs.messageInput;
+                            if (input) {
+                                setTimeout(() => input.focus(), 300);
+                            }
+                        }
+                    });
+                },
+                closeChat() {
+                    this.isChatOpen = false;
+                },
+                sendMessage() {
+                    if (this.message.trim() === '') return;
+                    
+                    // Add user message to chat
+                    this.messages.push({
+                        type: 'sent',
+                        text: this.message,
+                        time: new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit' })
+                    });
+                    
+                    const messageToSend = this.message;
+                    this.message = '';
+                    
+                    // Show typing indicator
+                    this.isTyping = true;
+                    this.scrollToBottom();
+                    
+                    // Simulate typing delay then redirect to WhatsApp
+                    setTimeout(() => {
+                        this.isTyping = false;
+                        const encodedMessage = encodeURIComponent(messageToSend);
+                        window.open(`https://wa.me/6282112096430?text=${encodedMessage}`, '_blank');
+                    }, 1500);
+                },
+                scrollToBottom() {
+                    this.$nextTick(() => {
+                        const chatBody = this.$refs.chatBody;
+                        if (chatBody) {
+                            chatBody.scrollTop = chatBody.scrollHeight;
+                        }
+                    });
+                }
+            }"
+            x-show="isButtonVisible"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-0"
+            x-transition:enter-end="opacity-100 scale-100"
+        >
+            <!-- Chat Popup -->
+            <div
+                x-show="isChatOpen"
+                x-transition:enter="transition ease-out duration-300 transform"
+                x-transition:enter-start="opacity-0 scale-95 translate-y-2"
+                x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+                x-transition:leave="transition ease-in duration-200 transform"
+                x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+                x-transition:leave-end="opacity-0 scale-95 translate-y-2"
+                class="absolute bottom-20 right-0 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden chat-popup"
+                style="max-height: 500px; transform-origin: bottom right"
+            >
+                <!-- Chat Header -->
+                <div
+                    class="bg-green-500 text-white p-4 flex items-center justify-between"
+                >
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+                        >
+                            <img
+                                src="assets/ipv-logo-header.png"
+                                alt="IPV Logo"
+                                class="w-[72px]"
+                            />
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-sm">IPV Support</h4>
+                            <p class="text-xs text-green-100">Online</p>
+                        </div>
+                    </div>
+                    <button
+                        @click="closeChat()"
+                        class="text-white hover:text-green-200 transition-colors duration-200"
+                        aria-label="Close chat"
+                    >
+                        <svg
+                            class="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Chat Body -->
+                <div
+                    x-ref="chatBody"
+                    class="p-4 h-80 overflow-y-auto bg-gray-50 space-y-3 chat-body"
+                    style="
+                        background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot; fill=&quot;%23f0f0f0&quot;><circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;1&quot; opacity=&quot;0.3&quot;/></svg>');
+                        background-size: 20px 20px;
+                    "
+                >
+                    <template x-for="(msg, index) in messages" :key="index">
+                        <div
+                            :class="msg.type === 'sent' ? 'flex justify-end' : 'flex justify-start'"
+                            x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                        >
+                            <div
+                                :class="msg.type === 'sent' ? 'text-white chat-bubble-sent' : 'text-gray-800 chat-bubble-received'"
+                                class="max-w-xs px-4 py-2 message-slide-in"
+                            >
+                                <p class="text-sm" x-text="msg.text"></p>
+                                <p
+                                    :class="msg.type === 'sent' ? 'text-green-100' : 'text-gray-500'"
+                                    class="text-xs mt-1"
+                                    x-text="msg.time"
+                                ></p>
+                            </div>
+                        </div>
+                    </template>
+
+                    <!-- Typing indicator -->
+                    <div
+                        x-show="isTyping"
+                        class="flex justify-start"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0"
+                        x-transition:enter-end="opacity-100"
+                    >
+                        <div
+                            class="bg-white text-gray-800 max-w-xs px-4 py-2 chat-bubble-received"
+                        >
+                            <div class="flex space-x-1 items-center">
+                                <div
+                                    class="w-2 h-2 bg-gray-400 rounded-full typing-dots"
+                                ></div>
+                                <div
+                                    class="w-2 h-2 bg-gray-400 rounded-full typing-dots"
+                                    style="animation-delay: 0.1s"
+                                ></div>
+                                <div
+                                    class="w-2 h-2 bg-gray-400 rounded-full typing-dots"
+                                    style="animation-delay: 0.2s"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Input -->
+                <div class="p-4 bg-white border-t border-gray-200">
+                    <form
+                        @submit.prevent="sendMessage()"
+                        class="flex space-x-2"
+                    >
+                        <input
+                            x-model="message"
+                            x-ref="messageInput"
+                            type="text"
+                            placeholder="Type a message..."
+                            class="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                            @keydown.enter="sendMessage()"
+                        />
+                        <button
+                            type="submit"
+                            class="bg-green-500 hover:bg-green-600 w-12 h-12 text-white p-2 rounded-full transition-colors duration-200 flex items-center justify-center"
+                            aria-label="Send message"
+                        >
+                            <svg
+                                class="w-5 h-5 transform rotate-90"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                                />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Floating Button -->
+            <button
+                @click="openChat()"
+                x-show="!isChatOpen"
+                class="relative flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group floating-button"
+                aria-label="Open WhatsApp chat"
+            >
+                <!-- WhatsApp Icon -->
+                <svg
+                    class="w-8 h-8 relative z-10"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.566"
+                    />
+                </svg>
+
+                <!-- Notification badge -->
+                <div
+                    class="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold pulse-notification"
+                >
+                    2
+                </div>
+            </button>
+        </div>
 
         <!-- AlpineJS for slider functionality -->
         <script
